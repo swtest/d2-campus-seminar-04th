@@ -54,6 +54,13 @@ public class Money {
     }
 
     /**
+     * @return 돈(원)
+     */
+    public long longValue() {
+        return this.won;
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
