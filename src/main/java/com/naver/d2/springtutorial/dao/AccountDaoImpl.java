@@ -7,6 +7,8 @@ package com.naver.d2.springtutorial.dao;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.naver.d2.springtutorial.domain.Account;
 
 /**
@@ -14,6 +16,7 @@ import com.naver.d2.springtutorial.domain.Account;
  * 
  * @author <a href="mailto:scroogy@swtest.co.kr">최영목</a>
  */
+@Repository
 public class AccountDaoImpl implements AccountDao {
 
     /** 계좌 Map */

@@ -4,6 +4,9 @@
  *******************************************************************************/
 package com.naver.d2.springtutorial.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 import com.naver.d2.springtutorial.dao.AccountDao;
 import com.naver.d2.springtutorial.domain.Account;
 import com.naver.d2.springtutorial.domain.Money;
@@ -13,9 +16,11 @@ import com.naver.d2.springtutorial.domain.Money;
  * 
  * @author <a href="mailto:scroogy@swtest.co.kr">최영목</a>
  */
+@Service
 public class AccountTransferServiceImpl implements AccountTransferService {
 
     /** 계좌 Dao  */
+    @Autowired
     private AccountDao accountDao;
 
     // -------------------------------------------------------------------------
